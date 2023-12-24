@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Zubair Zubair</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/453d5bc5bf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpeg" class="logo">
+            <ul class="sidemenu">
+                <li><a href="#header">Home</a> </li>
+                <li><a href="#about">About</a> </li>
+                <li><a href="#services">Services</a> </li>
+                <li><a href="#portfolio">Portfolio</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <i class="fa-regular fa-rectangle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Rising Sophomore</p>
+            <h1>Hi, I'm <span>Zubair Zabir</span><br>from Bangladesh.</h1>
+        </div>
+    </div>
+</div>
+<!-- ===== About ===== -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="zubair_1.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a double major student at Rollins College, pursuing a degree in Computer Science and International Business. With a passion for software development, I devote most of my time to solving challenging problems on platforms like LeetCode. Combining my technical skills with a global perspective, I strive to bridge the gap between technology and business. I am driven by the desire to create innovative solutions that have a meaningful impact in today's interconnected world.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front End Developer<br>Designing Web/App interfaces</span></li>
+                        <li><span>Web Development<br>Web app Development</span></li>
+                        <li><span>App Development<br>Building Android/iOS apps</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - Current<br>Self taught Front End Developer</span></li>
+                        <li><span>2023 - Current<br>Self taught Web app Developer</span></li>
+                        <li><span>2023 - Current<br>Self taught App Developer</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023 - Current<br>Bachelors at Rollins College</span></li>
+                        <li><span>2021- 2023<br>Higher Secondary School Certificate at Cantonment English School & College</span></li>
+                        <li><span>2019 - 2021<br>Secondary School Certificate at Cantonment English School & College</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------- ==== Services ==== ------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As an accomplished web developer, my portfolio exemplifies a harmonious blend of technical skill and artistic design. Specializing in user-friendly, aesthetically pleasing websites, I emphasize intuitive navigation and responsive design, ensuring seamless functionality across various devices. Proficient in HTML5, CSS3, and JavaScript, my work features dynamic, interactive elements, optimized for both performance and accessibility. My designs focus on user engagement, aligning closely with brand identity, and staying abreast of current trends and technologies. This approach results in websites that are visually captivating, highly functional, and tailored to provide an engaging user experience.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>As a UI/UX designer, my focus is on crafting engaging, intuitive interfaces that prioritize user experience. I adopt a user-centered design approach, ensuring products are not only visually appealing but also functional and easy to navigate. My expertise lies in creating cohesive designs through thoughtful use of color, typography, and interaction design. Utilizing a range of tools, I develop wireframes, prototypes, and high-fidelity designs, with a strong emphasis on usability and accessibility. My process is driven by user research and feedback, tailoring designs to meet real user needs. My portfolio showcases diverse projects, highlighting my skill in transforming complex concepts into user-friendly interfaces.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>As an app designer, I specialize in creating intuitive and visually appealing mobile applications. My approach focuses on simplicity and user engagement, ensuring each app is not only aesthetically pleasing but also easy to navigate. I skillfully blend color, typography, and layout to craft accessible and engaging interfaces. Proficient in both iOS and Android design, I tailor my work to each platform's unique characteristics. My process is rooted in user research and testing, ensuring that the final product resonates with its target audience. My portfolio includes diverse apps, from productivity tools to social media platforms, each demonstrating my commitment to combining functionality with innovative design.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==== Portfolio ==== -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-ttile">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people aound the world. Download it from play store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app allows you to play music without an internet connection. Download it from play store</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app allows you to buy groceeries from any store in Bangladesh. Download it from play store</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+</div>
+<!-- ==== contact ==== -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> zzabir@rollins.edu</p>
+                <p><i class="fa-solid fa-phone"></i> +14075029471</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/zubair.jabir/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.threads.net/@zubair_zabir"><i class="fa-brands fa-square-threads"></i></a>
+                    <a href="https://www.instagram.com/zubair_zabir/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/zubair-zabir/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="my_cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="'submit-to-google-sheet'">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }  
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        } 
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right ="-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9fODAPDYYFW3VAp_FBc_SsboEJZ5eKYImTSZQphkD8lMSuBxZAjYAZSN7iwIhoFEYRw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
